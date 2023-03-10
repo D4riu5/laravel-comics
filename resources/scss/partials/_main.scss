@@ -1,5 +1,43 @@
 main{
-    h1{
-        color: blue;
+    
+    #jumbo{
+        img{
+            width: 100%;
+            aspect-ratio: 4.5/1;
+            object-fit: cover;
+            object-position: 0 0;
+        }
     }
+
+    .my_preview-btn{
+        display: inline-block;
+        color: white;
+        background-color: #0282F9;
+        font-size: 12px;
+        font-weight: bold;
+    
+        &.my_floating{
+            position: absolute;
+            top: -68px;
+            font-size: 15px;
+        }
+    
+    }
+
+    .my_card{
+        width: calc(100%/6);
+    
+        img{
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+    
+        h5{
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
 }
