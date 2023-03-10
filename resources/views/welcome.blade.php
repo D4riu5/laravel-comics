@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel 9 + Bootstrap Template</title>
+@section('page_title')
+    Homepage
+@endsection
 
-        {{-- assets from directive @vite  --}}
-        @vite('resources/js/app.js')
-    </head>
-    <body class="bg-dark text-white">
-
-        <main>
-            
-        </main>
-
-    </body>
-</html>
+@section('main_section')
+    <main>
+        <h1>ciao from main</h1>
+    </main>
+@endsection
