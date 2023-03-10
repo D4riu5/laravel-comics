@@ -3,31 +3,31 @@
 return [
     [
         'label' => 'CHARACTERS',
-        'url' => '#nogo',
+        'url' => 'characters',
         'active' => false,
         'selectIcon' => false
     ],
     [
         'label' => 'COMICS',
-        'url' => `{{ route('comics') }}`,
+        'url' => 'comics',
         'active' => true,
         'selectIcon' => false
     ],
     [
         'label' => 'MOVIES',
-        'url' => '#nogo',
+        'url' => 'movies',
         'active' => false,
         'selectIcon' => false
     ],
     [
         'label' => 'TV',
-        'url' => '#nogo',
+        'url' => 'tv',
         'active' => false,
         'selectIcon' => false
     ],
     [
         'label' => 'GAMES',
-        'url' => '#nogo',
+        'url' => 'games',
         'active' => false,
         'selectIcon' => false
     ],
@@ -39,7 +39,7 @@ return [
     ],
     [
         'label' => 'VIDEOS',
-        'url' => '#nogo',
+        'url' => 'videos',
         'active' => false,
         'selectIcon' => false
     ],

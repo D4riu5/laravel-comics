@@ -7,7 +7,10 @@
         </div>
         <nav class="d-flex justify-content-between align-items-center">
             @foreach ($links as $link)
-                <a href="{{ $link['url'] }}" class="{{ $link['active'] ? 'active mx-2' : 'mx-2' }}">
+                <a 
+                href="{{ $link['url'] === '#nogo' ? '#nogo' : route($link['url']) }}"
+                class="{{ $link['active'] ? 'active mx-2' : 'mx-2' }}"
+                >
                     {{ $link['label'] }}
                     @if ($link['selectIcon'])
                         <i class="fa-solid fa-caret-down mx-1 text-primary"></i>
